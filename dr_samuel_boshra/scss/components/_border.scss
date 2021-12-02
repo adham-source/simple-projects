@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as color;
+
+.border_t {
+    width: 100%;
+    border-top: 3px solid color.$main-color;
+}
+
+.border_r {
+    border-right: 5px solid color.$main-color;
+}

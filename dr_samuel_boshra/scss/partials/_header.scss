@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as color;
+.main_header {
+    .navbar-brand {
+        width: 40px;
+    }
+    .social_media {
+        &-list {
+            display: flex;
+            align-items: center;
+            &-item {
+                margin: .3rem;
+            }
+        }
+
+    }
+    a {
+        font-size: 1.4rem;
+    }
+}
+
+.hero_content {
+    background: color.$main-color;
+    &-text {
+        color: color.$color-white;
+    }
+    &-bg {
+        img {
+            height: 100%;
+        }
+    }
+    
+}
+.hero {
+    background: color.$main-color;
+    color: color.$color-white;
+    .nav_breadcrumb {
+        height: 100%;
+        padding: 1rem 0;
+        ol {
+            margin-bottom: 0;
+            li {
+                font-size: 20px;
+                color: color.$color-black;
+                a {
+                    color: color.$color-white;
+                    transition: all .3s;
+                    &:hover {
+                        opacity: .9;
+                    }
+                }
+            }
+            
+        }
+    }
+}

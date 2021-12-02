@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as color;
+
+
+.button {
+    color: color.$color-white;
+    background: color.$main-color;
+    font-size: 1.5rem;
+    transition: all .3s;
+    &:hover {
+        background: color.$main-color-hover;
+    }
+}
+

@@ -1,0 +1,13 @@
+extends layouts/layout.pug 
+block hero-header
+    .hero 
+        .container-fluid 
+            nav(aria-label="breadcrumb" class="nav_breadcrumb")
+                ol(class="breadcrumb")
+                    li(class="breadcrumb-item")
+                        a(a href="/") الرئيسية
+                    li(class="breadcrumb-item active", aria-current="page") المقالات
+block content
+    main(class="my-3")
+        .container-fluid
+            h2 المقالات
