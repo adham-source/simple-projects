@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&amp;display=swap"/>
+    <!-- boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css"/>
+    <!-- Coustom css file link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body> 
+    <!-- Header section start -->
+    <header class="header"><a class="logo" href="index.html">Furni<i class="bx bx-bulb"></i></a>
+      <form class="search-form" action="index.html" methods="GET" id="searchForm">
+        <input type="search" name="search" placeholder="search here .." id="search-box">
+        <label class="bx bx-search-alt" for="search-box"> </label>
+      </form>
+      <div class="icons">
+        <div class="bx bx-menu menu-btn" id="menuBtn"></div>
+        <div class="bx bx-search-alt search-btn" id="searchBtn"></div>
+        <div class="bx bx-cart-alt cart-btn" id="cartBtn"></div>
+        <div class="bx bx-user login-btn" id="loginBtn"></div>
+      </div>
+    </header>
+    <!-- Header section end -->
+    <!-- Closer btn -->
+    <div class="closer" id="closer">&times;</div>
+    <!-- navbar -->
+    <nav class="navbar" id="navbar"><a href="index.html">home</a><a href="shop.html">shop</a><a href="about.html">about</a><a href="team.html">team</a><a href="blog.html">blog</a><a href="contact.html">contact</a>
+    </nav>
+    <!-- Shopping cart -->
+    <div class="shopping-cart" id="shoppingCart">
+      <div class="box deleteItemCart"><span class="close-times">&times;</span><img src="assets/images/cart-img-1.jpg" alt="" srcset="">
+        <div class="content">
+          <h3>furniture </h3><span class="quantity">1</span><span class="multiply">x </span><span class="price">EG 140</span>
+        </div>
+      </div>
+      <h3 class="total">total <span>EG 560</span></h3>
+      <div class="box deleteItemCart"><span class="close-times">&times;</span><img src="assets/images/cart-img-2.jpg" alt="" srcset="">
+        <div class="content">
+          <h3>furniture </h3><span class="quantity">1</span><span class="multiply">x </span><span class="price">EG 140</span>
+        </div>
+      </div>
+      <h3 class="total">total <span>EG 560</span></h3>
+      <div class="box deleteItemCart"><span class="close-times">&times;</span><img src="assets/images/cart-img-3.jpg" alt="" srcset="">
+        <div class="content">
+          <h3>furniture </h3><span class="quantity">1</span><span class="multiply">x </span><span class="price">EG 140</span>
+        </div>
+      </div>
+      <h3 class="total">total <span>EG 560</span></h3>
+      <div class="box deleteItemCart"><span class="close-times">&times;</span><img src="assets/images/cart-img-4.jpg" alt="" srcset="">
+        <div class="content">
+          <h3>furniture </h3><span class="quantity">1</span><span class="multiply">x </span><span class="price">EG 140</span>
+        </div>
+      </div>
+      <h3 class="total">total <span>EG 560</span></h3><a class="btn btn-checkout" href="index.html">checkout cart</a>
+    </div>
+    <!-- Login form -->
+    <div class="login-form" id="loginForm">
+      <form action="index.html" method="post"> 
+        <h3>login </h3>
+        <input class="box" type="email" name="email" placeholder="enter your email">
+        <input class="box" type="password" name="password" placeholder="enter your password">
+        <div class="remember">
+          <input type="checkbox" name="checkbox" id="rememberMe">
+          <label for="rememberMe">remember me </label>
+        </div>
+        <button class="btn btn-login" type="submit">login </button>
+        <p>forget password?<a href="index.html">click here </a></p>
+        <p>don't have an account <a href="index.html">create now </a></p>
+      </form>
+    </div>
+    <h1>blog page</h1>
+    <!-- Coustom js file link -->
+    <script src="assets/js/main.js"> </script>
+  </body>
+</html>

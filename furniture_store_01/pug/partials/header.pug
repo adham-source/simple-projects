@@ -1,0 +1,15 @@
+// Header section start 
+header(class="header")
+    a(href="index.html" class="logo") Furni
+        i(class='bx bx-bulb')
+    form(action="index.html", methods="GET", class="search-form" id="searchForm")
+        input(type="search", name="search", placeholder="search here ..", id="search-box")
+        label(for="search-box", class="bx bx-search-alt") 
+    div(class="icons")
+        div(id="menuBtn", class="bx bx-menu menu-btn")
+        div(id="searchBtn", class="bx bx-search-alt search-btn")
+        div(id="cartBtn", class="bx bx-cart-alt cart-btn")
+        div(id="loginBtn", class="bx bx-user login-btn")
+// Header section end 
+//- navbar 
+include ./navbar.pug

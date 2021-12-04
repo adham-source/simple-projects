@@ -1,0 +1,47 @@
+// Closer btn 
+div(id="closer", class="closer") &times;
+
+// navbar 
+nav(class="navbar", id="navbar")
+    - let navs = ['home', 'shop', 'about', 'team', 'blog', 'contact']
+        each nav in navs 
+            if nav === 'home'
+                a(href=`${nav = 'index'}.html`)= `${nav = 'home'}`
+            else 
+                a(href=`${nav}.html`)= nav
+
+// Shopping cart 
+div(class="shopping-cart" id="shoppingCart")
+    - let imagesCart = ['cart-img-1.jpg', 'cart-img-2.jpg', 'cart-img-3.jpg', 'cart-img-4.jpg']
+    - let price = 140.00
+    - let countShopping = imagesCart.length
+    each image, index in imagesCart
+        div(class="box deleteItemCart")
+            span(class="close-times") &times;
+            img(src=`assets/images/${image}`, alt="", srcset="")
+            div(class="content")
+                h3 furniture 
+                span(class="quantity") 1
+                span(class="multiply") x 
+                span(class="price") EG #{price}
+        h3(class="total") total 
+            span=`EG ${price * countShopping}`
+        if index == countShopping - 1 
+            a(href="index.html" class="btn btn-checkout") checkout cart
+
+// Login form 
+div(class="login-form" id="loginForm")
+    form(action="index.html", method="post") 
+        h3 login 
+        input(type="email", name="email", placeholder="enter your email", class="box")
+        input(type="password", name="password", placeholder="enter your password", class="box")
+        div(class="remember")
+            input(type="checkbox", name="checkbox", id="rememberMe")
+            label(for="rememberMe") remember me 
+        button(type="submit", class="btn btn-login") login 
+        p forget password?
+            a(href="index.html") click here 
+        p don't have an account 
+            a(href="index.html") create now 
+
+
