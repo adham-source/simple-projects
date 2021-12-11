@@ -1,2 +1,6 @@
 @use '../base/_base' as *;
 @use '../partials/header';
+
+@use '../pages/home';
+
+@use '../partials/footer';

@@ -1,0 +1,53 @@
+@use '../abstracts/_abstracts' as *;
+.footer {
+    background: $light-bg;
+    .box-container {
+        @include grid(25rem);
+        .box {
+            h3 {
+                font-size: 2.2rem;
+                color: $green;
+                padding: 1rem 0;
+            }
+            p {
+                @extend h3;
+                color: $light-color;
+                padding: initial 0 1rem 0;
+            }
+            a {
+                @extend h3;
+                display: block;
+                color: $light-color;
+                &:hover {
+                    color: $green;
+                    i {
+                        padding-right: 1.5rem;
+                    }
+                }
+                i {
+                    padding-right: .5rem;
+                    color: $green;
+                }
+            }
+            form {
+                input {
+                    width: 100%;
+                    padding: 1rem 1.2rem;
+                    font-size: 1.6rem;
+                    color: $green;
+                    text-transform: none;
+                    margin: .7rem 0;
+                    border: $border;
+                }
+            }
+        }
+    }
+}
+
+.credit {
+    text-align: center;
+    font-size: 1.8rem;
+    background: $green;
+    color: $white;
+    letter-spacing: 1px;
+}

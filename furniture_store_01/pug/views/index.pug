@@ -1,3 +1,16 @@
 extends ../layouts/layout.pug
 block content 
-    h1 home page
+    section(class="home")
+        div(class="slides-container")
+            - let images = ['home-img-1.png', 'home-img-2.png']
+                each image, index in images 
+                    div(class=`slide ${index == 0 ? 'active' : ''} `)
+                        div(class="content")
+                            span new arrivels 
+                            h1 product chair #{index + 1} 
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            a(href="#" class="btn") shop now 
+                        div(class="image")
+                            img(src=`assets/images/${image}`, alt="", srcset="")
+        div(class="bx bxs-chevron-right slide-next", id="slideNext")
+        div(class="bx bxs-chevron-left slide-prev", id="slidePrev")

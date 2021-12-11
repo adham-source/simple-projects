@@ -1,14 +1,9 @@
+include ../abstracts/mixins.pug
 // Closer btn 
 div(id="closer", class="closer") &times;
 
-// navbar 
-nav(class="navbar", id="navbar")
-    - let navs = ['home', 'shop', 'about', 'team', 'blog', 'contact']
-        each nav in navs 
-            if nav === 'home'
-                a(href=`${nav = 'index'}.html`)= `${nav = 'home'}`
-            else 
-                a(href=`${nav}.html`)= nav
+// navbar
++links("navbar", "navbar")
 
 // Shopping cart 
 div(class="shopping-cart" id="shoppingCart")
@@ -41,7 +36,7 @@ div(class="login-form" id="loginForm")
         button(type="submit", class="btn btn-login") login 
         p forget password?
             a(href="index.html") click here 
-        p don't have an account 
+        p don't have an account ? 
             a(href="index.html") create now 
 
 

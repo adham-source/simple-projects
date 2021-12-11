@@ -37,3 +37,21 @@ searchBtn.addEventListener('click', () => {
 window.onscroll = () => {
     searchForm.classList.remove('active')
 }
+
+// Slider home page next and prev
+const slides = document.querySelectorAll('.home .slides-container .slide')
+const slideNext = document.querySelector('#slideNext')
+const slidePrev = document.querySelector('#slidePrev')
+let index = 0
+
+slideNext.addEventListener('click', () => {
+    slides[index].classList.remove('active')
+    index = (index + 1) % slides.length
+    slides[index].classList.add('active')
+})
+
+slidePrev.addEventListener('click', () => {
+    slides[index].classList.remove('active')
+    index = (index - 1 + slides.length) % slides.length
+    slides[index].classList.add('active')
+})

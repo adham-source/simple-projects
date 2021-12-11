@@ -34,6 +34,13 @@ html {
     }
 }
 
+section, footer {
+    padding: 3rem 9%;
+    @media (max-width: 991px) {
+        padding: 3rem 2rem;
+    }
+}
+
 .btn {
     display: inline-block;
     margin-top: 1rem;

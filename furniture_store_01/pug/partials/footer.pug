@@ -1,0 +1,20 @@
+include ../abstracts/mixins.pug
+// Start footer section 
+footer(class="footer")
+    .box-container  
+        +links("footer-nav box", "footerNav", true)
+            h3 quick links
+        +extraLinks("box")
+        +socialIcons("box")
+        div(class="box")
+            h3 newsletter 
+            p subscribe for latest updates 
+            form(action="", method="post")
+                input(type="email", name="email", id="email", placeholder="enter your email ..")
+                button(type="submit" class="btn") subscribe 
+section(class="credit")
+    - let currentDate = new Date()
+    - let option = { year: 'numeric' }
+    | Created by Meerkat | all rights reserved 
+    span= `${currentDate.toLocaleDateString('en-us', option)}`
+// End footer section 
