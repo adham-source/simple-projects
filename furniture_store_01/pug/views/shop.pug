@@ -1,4 +1,25 @@
 extends ../layouts/layout.pug
 block content 
-    section
-        h1 shop page
+    +breadCrumb("heading", "our shop", "index.html", "home", "shop")
+    section(class="products")
+        h3(class="title")
+            span your products 
+            a(href="#") view all >> 
+        div(class="box-container")
+            - let imagesProduct = ['product-1.jpg', 'product-2.jpg', 'product-3.jpg', 'product-4.jpg', 'product-5.jpg', 'product-6.jpg', 'product-7.jpg', 'product-8.jpg']
+                each image, index in imagesProduct
+                    div(class="box")
+                        div(class="icons")
+                            a(href="#" class="bx bx-cart-alt")
+                            a(href="#" class="bx bx-heart")
+                            a(href="#" class="bx bx-show-alt") 
+                        div(class="image image-product")
+                            img(src=`assets/images/${image}`, alt="", srcset="")
+                        div(class="content")
+                            div(class="price") $140.00
+                            h5 modern furniture #{index + 1}
+                            div(class="stars")
+                                - for(let i= 0; i < 4; i ++)
+                                    i(class='bx bxs-star')
+                                i(class='bx bx-star')
+                                span (50)

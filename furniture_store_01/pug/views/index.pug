@@ -14,3 +14,14 @@ block content
                             img(src=`assets/images/${image}`, alt="", srcset="")
         div(class="bx bxs-chevron-right slide-next", id="slideNext")
         div(class="bx bxs-chevron-left slide-prev", id="slidePrev")
+    // Banner section start 
+    section(class="banner-container")
+        - let imagesBanner = ['banner-1.jpg', 'banner-2.jpg', 'banner-3.jpg']
+            each image, index in imagesBanner 
+                div(class="banner")
+                    img(src=`assets/images/${image}`, alt="", srcset="")
+                    div(class="content")
+                        span limited offer 
+                        h3 upto 50% off 
+                        a(href="shop.html", class="btn") shop now 
+    // Banner section end 

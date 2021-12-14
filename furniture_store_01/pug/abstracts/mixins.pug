@@ -35,3 +35,12 @@ mixin socialIcons(className)
                 a(href=data.href)
                     i(class=data.class)
                     = data.title
+
+//- heading pages (breadcrumb)
+mixin breadCrumb(className, title, href, titleLink, mainTitle)
+    section(class=className)
+        h2= title 
+        p
+            a(href=href)= `${titleLink} ` 
+            | /
+            span= ` ${mainTitle}`

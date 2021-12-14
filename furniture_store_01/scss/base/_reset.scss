@@ -21,7 +21,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: $green;
+        background: $main-color;
     }
 }
 
@@ -46,7 +46,7 @@ section, footer {
     margin-top: 1rem;
     padding: .9rem 2.5rem;
     font-size: 1.6rem;
-    background: $green;
+    background: $main-color;
     color: $white;
     cursor: pointer;
     user-select: none;

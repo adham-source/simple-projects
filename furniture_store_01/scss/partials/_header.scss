@@ -30,7 +30,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: $green;
+        background: $main-color;
     }
 }
 
@@ -46,7 +46,7 @@
     justify-content: space-between;
     .logo {
         font-size: 2.5rem;
-        color: $green;
+        color: $main-color;
         font-weight: bolder;
         i {
             padding-right: .3rem;
@@ -56,7 +56,7 @@
     .search-form {
         height: 4rem;
         width: 50rem;
-        border-radius: .5rem;
+        border-radius: $border-radius;
         background: $white;
         overflow: hidden;
         display: flex;
@@ -67,14 +67,14 @@
             width: 100%;
             padding: 0 1.2rem;
             font-size: 1.6rem;
-            color: $green;
+            color: $main-color;
             text-transform: none;
         }
         label {
             font-size: 2.2rem;
             padding-right: 1.7rem;
             cursor: pointer;
-            color: $green;
+            color: $main-color;
             &:hover {
                 color: $light-color;
             }
@@ -84,7 +84,7 @@
         margin-left: 2rem;
         font-size: 2.5rem;
         cursor: pointer;
-        color: $green;
+        color: $main-color;
         &:hover {
             color: $light-color;
         }
@@ -106,7 +106,7 @@
 .closer {
     position: fixed;
     top: 1.2rem; right: 30rem;
-    color: $green;
+    color: $main-color;
     font-weight: bolder;
     font-size: 4rem;
     cursor: pointer;
@@ -124,7 +124,7 @@
     a {
         margin: 1rem 0;
         font-size: 2.3rem;
-        color: $green;
+        color: $main-color;
         &:hover {
             color: $light-color;
         }
@@ -152,7 +152,7 @@
             cursor: pointer;
             user-select: none;
             &:hover {
-                color: $green;
+                color: $main-color;
             }
         }
         img {
@@ -161,7 +161,7 @@
 
         .content {
             h3 {
-                color: $green;
+                color: $main-color;
                 font-size: 1.8rem;
                 padding-bottom: .5rem;
             }
@@ -180,7 +180,7 @@
         padding: 1rem 0;
         color: $light-color;
         span {
-            color: $green;
+            color: $main-color;
         }
     }
     .btn-checkout {
@@ -196,20 +196,20 @@
     form {
         padding: 1.7rem;
         border: $border;
-        border-radius: .3rem;
+        border-radius: $border-radius;
         h3 {
             font-size: 2.2rem;
             padding-bottom: 1rem;
-            color: $green;
+            color: $main-color;
             
         }
         .box {
             width: 100%;
-            color: $green;
+            color: $main-color;
             border: $border;
             margin: .7rem 0;
             padding: 1rem;
-            border-radius: .3rem;
+            border-radius: $border-radius;
             text-transform: none;
         }
         .remember {
@@ -235,7 +235,7 @@
             color: $light-color;
 
             a {
-                color: $green;
+                color: $main-color;
                 margin: 0 .3rem;
                 &:hover {
                     text-decoration: underline;

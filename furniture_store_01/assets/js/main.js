@@ -43,13 +43,14 @@ const slides = document.querySelectorAll('.home .slides-container .slide')
 const slideNext = document.querySelector('#slideNext')
 const slidePrev = document.querySelector('#slidePrev')
 let index = 0
-
+if(slideNext)
 slideNext.addEventListener('click', () => {
     slides[index].classList.remove('active')
     index = (index + 1) % slides.length
     slides[index].classList.add('active')
 })
 
+if(slidePrev)
 slidePrev.addEventListener('click', () => {
     slides[index].classList.remove('active')
     index = (index - 1 + slides.length) % slides.length
