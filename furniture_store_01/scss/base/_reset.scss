@@ -41,12 +41,19 @@ section, footer {
     }
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
     padding: .9rem 2.5rem;
     font-size: 1.6rem;
     background: $main-color;
+    border-radius: $border-radius;
     color: $white;
     cursor: pointer;
     user-select: none;

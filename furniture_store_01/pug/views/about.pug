@@ -1,4 +1,24 @@
 extends ../layouts/layout.pug
-block content
-    section 
-        h1 about page
+block content 
+    +breadCrumb("heading", "about us", "index.html", "home", "about")
+    section(class="about")
+        div(class="image")
+            img(src="assets/images/about-img.jpg", alt="", srcset="")
+        div(class="content")
+            span welcome to our shop 
+            h3 we make your home more astonishing 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptatum dolor aliquid ad ipsum quasi cum modi illum fugit totam, libero, sit error itaque tenetur. Aspernatur consectetur amet ex quos!
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem id culpa provident ratione unde doloremque. Blanditiis excepturi explicabo totam, voluptatibus sequi doloribus maxime molestiae qui, eaque quibusdam quae consequuntur?
+            a(href="#", class="btn") read more
+    section(class="services products")
+        h3(class="title")
+            span Our services 
+            a(href="#") view all >> 
+        div(class="box-container")
+            - let contentsBox = [{image: 'serv-1.svg', title: 'product selling'}, {image: 'serv-2.svg', title: 'product designing'}, {image: 'serv-3.svg', title: '23 / 6 suport'}]
+                each contentBox in contentsBox
+                    div(class="services-box")
+                        img(src=`assets/images/${contentBox.image}`, alt="", srcset="")
+                        h5= contentBox.title
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, a dignissimos fuga itaque beatae nam dolorem consequatur obcaecati officiis vero autem, accusantium, facilis commodi possimus tempore cupiditate ex reiciendis veniam!
+                        a(href="#", class="btn") read more 

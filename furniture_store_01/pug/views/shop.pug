@@ -1,6 +1,16 @@
 extends ../layouts/layout.pug
 block content 
     +breadCrumb("heading", "our shop", "index.html", "home", "shop")
+    section(class="category products")
+        h3(class="title")
+            span Our shop 
+            a(href="#") view all >> 
+        div(class="box-container")
+            - let contentsBox = [{image: 'icon-1.png', title: 'house sofa'}, {image: 'icon-2.png', title: 'working table'}, {image: 'icon-3.png', title: 'corner table'}, {image: 'icon-4.png', title: 'office chair'}, {image: 'icon-5.png', title: 'new wardrobe'}]
+                each contentBox in contentsBox
+                    a(href="#", class="box")
+                        img(src=`assets/images/${contentBox.image}`, alt="", srcset="")
+                        h5= contentBox.title
     section(class="products")
         h3(class="title")
             span your products 

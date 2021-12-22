@@ -1,4 +1,17 @@
 extends ../layouts/layout.pug
 block content 
-    section 
-        h1 team page
+    +breadCrumb("heading", "our team", "index.html", "home", "team")
+    section(class="team products")
+        h3(class="title")
+            span Our team 
+            a(href="#") view all >> 
+        div(class="box-container")
+            - let contentBoxTeams = [{image: 'team-1.jpg', name: 'zhraa', job: 'frontend devloper'}, {image: 'team-2.jpg', name: 'yang', job: 'desiner'}, {image: 'team-3.jpg', name: 'may', job: 'markiting'}, {image: 'team-4.jpg', name: 'jhon', job: 'desiner'}, {image: 'team-5.jpg', name: 'asmaa', job: 'fullstack devloper'}, {image: 'team-6.jpg', name: 'adham', job: 'fullstack devloper'}]
+                each contentBoxTeam in contentBoxTeams
+                    div(class="team-box")
+                        +socialIcons("share")
+                        .image 
+                            img(src=`assets/images/${contentBoxTeam.image}`, alt="", srcset="")
+                        div(class="user")
+                            h5= contentBoxTeam.name 
+                            span= contentBoxTeam.job

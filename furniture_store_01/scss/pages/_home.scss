@@ -31,7 +31,6 @@
                 animation: fadeLeft .4s linear .4s backwards;
                 span {
                     font-size: 2.5rem;
-                    color: $light-color;
                 }
                 h1 {
                     font-size: 6rem;
@@ -42,15 +41,12 @@
                     }
                 }
                 p {
-                    @extend h1;
-                    font-size: 1.5rem;
-                    line-height: 2;
+                   padding-top: .5rem;
                 }
             }
             .image {
                 flex: 1 1 40rem;
                 img {
-                    width: 100%;
                     animation: fadeOut .4s linear;
                 }
             }
@@ -103,29 +99,18 @@
         overflow: hidden;
         position: relative;
         border-radius: $border-radius;
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
         &:hover img {
-            transform: scale(1.1);
+            transform: scale(1.2);
         }
-
         .content {
             position: absolute;
             top: 50%; left: 2rem;
             transform: translateY(-50%);
             span {
                 font-size: 1.7rem;
-                color: $light-color;
             }
             h3 {
                 padding-top: .5rem;
-                font-size: 2.2rem;
-                color: $main-color;
             }
         }
     }

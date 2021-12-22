@@ -27,14 +27,16 @@ mixin extraLinks(className)
                     = data
 
 //- Social media icons link 
-mixin socialIcons(className)
+mixin socialIcons(className, title = false)
     div(class=className)
-        h3 Social media links 
+        if title
+            h3= title 
         - let dataSocialIcons = [{href: "https://www.facebook.com", class: "bx bxl-facebook", title: "facebook"}, {href: "https://twitter.com", class: "bx bxl-twitter", title: "twitter"} , {href: "https://www.instagram.com", class: "bx bxl-instagram", title: "instagram"}, {href: "https://www.youtube.com", class: "bx bxl-youtube", title: "youtube"}, {href: "https://www.linkedin.com", class: "bx bxl-linkedin", title: "linkedin"}]
             each data in dataSocialIcons
                 a(href=data.href)
                     i(class=data.class)
-                    = data.title
+                    if title
+                        = data.title
 
 //- heading pages (breadcrumb)
 mixin breadCrumb(className, title, href, titleLink, mainTitle)

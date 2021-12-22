@@ -1,0 +1,44 @@
+@use '../abstracts/_abstracts' as *;
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    form {
+        h5 {
+            margin-bottom: 1rem;
+        }
+        padding: 2.5rem;
+        background: $light-bg;
+        flex: 1 1 40rem;
+        label {
+            display: block;
+            padding-bottom: 1rem;
+            font-size: 1.4rem;
+            color: $light-color;
+            letter-spacing: 1px;
+        }
+        input, textarea {
+            width: 100%;
+            background: none;
+            text-transform: none;
+            font-size: 1.4rem;
+            color: $main-color;
+            border-bottom: 1px solid $light-color;
+            padding: .5rem;
+            margin-bottom: 1rem;
+            &:focus {
+                border-bottom-color: $main-color;
+            }
+        }
+        textarea {
+            resize: none;
+            height: 15rem;
+        }
+
+    }
+    .map {
+        flex: 1 1 40rem;
+        width: 100%;
+    }
+}
