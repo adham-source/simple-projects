@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as color;
+.blog_content {
+    h6 {
+        font-weight: bold;
+    }
+    p {
+        padding-right: 1.3rem;
+        position: relative;
+        &::before {
+            content: "#";
+            position: absolute;
+            font-size: 1.5rem;
+            color: color.$main-color;
+            top: -0.5rem;
+            right: 0;
+            display: flex;
+            align-items: center;
+        }
+        &:hover::before {
+            color: color.$main-color-hover;
+        }
+    }
+}

@@ -47,16 +47,21 @@ img {
   color: #1877f2;
 }
 
-.twitter {
-  color: #1da1f2;
-}
-
-.instagram {
-  color: #c32aa3;
-}
-
 .whatsapp {
   color: #25d366;
+}
+
+.yahoo {
+  color: #430297;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+.phone-call,
+.mail-send {
+  color: #0f9f90;
 }
 
 .main_header .navbar-brand {
@@ -78,9 +83,6 @@ img {
 }
 .hero_content-text {
   color: #fafafa;
-}
-.hero_content-bg img {
-  height: 100%;
 }
 
 .hero {
@@ -145,11 +147,37 @@ img {
 .button {
   color: #fafafa;
   background: #0f9f90;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   transition: all 0.3s;
 }
 .button:hover {
-  background: rgba(15, 159, 144, 0.733);
+  color: rgba(15, 159, 144, 0.733);
+  background: #fafafa;
+  border: 1px solid rgba(15, 159, 144, 0.733);
+}
+.button:focus {
+  box-shadow: none;
+}
+
+.blog_content h6 {
+  font-weight: bold;
+}
+.blog_content p {
+  padding-right: 1.3rem;
+  position: relative;
+}
+.blog_content p::before {
+  content: "#";
+  position: absolute;
+  font-size: 1.5rem;
+  color: #0f9f90;
+  top: -0.5rem;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.blog_content p:hover::before {
+  color: rgba(15, 159, 144, 0.733);
 }
 
 /*# sourceMappingURL=style.css.map */

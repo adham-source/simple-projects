@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as color;
+@use "../abstracts/variables" as color;
 .main_header {
     .navbar-brand {
         width: 40px;
@@ -8,10 +8,9 @@
             display: flex;
             align-items: center;
             &-item {
-                margin: .3rem;
+                margin: 0.3rem;
             }
         }
-
     }
     a {
         font-size: 1.4rem;
@@ -23,12 +22,6 @@
     &-text {
         color: color.$color-white;
     }
-    &-bg {
-        img {
-            height: 100%;
-        }
-    }
-    
 }
 .hero {
     background: color.$main-color;
@@ -43,13 +36,12 @@
                 color: color.$color-black;
                 a {
                     color: color.$color-white;
-                    transition: all .3s;
+                    transition: all 0.3s;
                     &:hover {
-                        opacity: .9;
+                        opacity: 0.9;
                     }
                 }
             }
-            
         }
     }
 }

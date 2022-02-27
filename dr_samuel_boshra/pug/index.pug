@@ -1,4 +1,6 @@
 extends layouts/layout.pug 
+block title 
+    title Dr.Samuel - الرئيسية
 block styles
     // Swiper Slider CSS 
     link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
@@ -11,7 +13,7 @@ block hero-header
                         h1(class="display-3 text-center") احجز استشارتك الآن
                 div(class="col-lg-6 bg-white")
                     div(class="hero_content-bg")
-                        img(src="assets/images/header.jpg" alt="Dr.Samuel")
+                        img(src="assets/images/header.jpg" alt="Dr.Samuel", class="img-fluid w-100")/
 
 block content 
     main(class="my-3")
@@ -62,7 +64,7 @@ block content
                 div(class="row")
                     div(class="col-lg-6 mb-3")
                         p(class="fs-4 text-start mb-5") الفوبيا أو الرهاب هو خوف شديد، مفرط، غير عقلاني، وغير مبرر من حالة معيّنة أو سلوك معيّن، ينطوى على شعور بالخطر وخوف من الأذى، وبالتالي يؤدى لمحاولة الشخص الهروب من المواجهة مع هذا الموقف أو هذه الحالة، فمثلاً من يخاف الأماكن المرتفعة يكون لديه دوماً شعور بالرعب من السقوط عند التواجد في مكان مرتفع فيحاول دوماً الابتعاد عن مثل تلك الأماكن. 
-                        button(type="button", class="btn button py-3 px-5 ", data-bs-toggle="modal", data-bs-target="#staticBackdrop") إقراء المزيد
+                        button(type="button", class="btn button", data-bs-toggle="modal", data-bs-target="#staticBackdrop") إقراء المزيد
                     div(class="col-lg-6 mb-3 text-end")
                         img(src="assets/images/morbid-fear-01.jpg", alt="", srcset="" class="rounded-2 image shadow")
                 //- Content morbid fear into modal
@@ -77,8 +79,28 @@ block content
                             div(class="modal-footer text-center")
                                 button(type="button" class="btn btn-secondary" data-bs-dismiss="modal") إغلاق المحتوي
         
+        section(class="bg-white py-5 border-top border-info border-2", id="reserve-with-us")
+            .container-fluid 
+                div(class="row")
+                    div(class="col text-start text-md-center")
+                        h2(class="") احجز معنا
+                        p(class="") يمكنك حجز كتاب أو استشارة من خلال أحد وسائل التواصل 
+                        div(class="social_media") 
+                            ul(class="social_media-list d-flex justify-content-start justify-content-md-center ml-0")
+                                li(class="social_media-list-item me-2")
+                                    a(href="https://www.facebook.com/الأستاذ-الدكتور-صمويل-بشري-101199182425741/" class="bx bxl-facebook facebook fs-3")
+                                li(class="social_media-list-item me-2")
+                                    a(href="https://wa.me/15551234567" class="bx bxl-whatsapp whatsapp fs-3")
+                                li(class="social_media-list-item me-2")
+                                    a(href="https://youtube.com/channel/UC_pIIy7tGkAh6hZbrLqJWwA/" class="bx bxl-youtube youtube fs-3")
+                                li(class="social_media-list-item me-2")
+                                    a(href="mailto:samuelboshra@edu.aun.edu.eg" class="bx bx-mail-send mail-send fs-3")
+                                li(class="social_media-list-item me-2")
+                                    a(href="mailto:samuelboshra25@yahoo.com" class="bx bxl-yahoo yahoo fs-3")
+                                li(class="social_media-list-item me-2")
+                                    a(href="tel:" class="bx bx-phone-call phone-call fs-3")
 
-        section(class="bg-white py-5 border-top border-info border-2")
+        //- section(class="bg-white py-5 border-top border-info border-2")
             .container
                 div(class="text-lg-center text-start")
                     h2 هذا النص للتجريب
@@ -94,7 +116,7 @@ block content
                                         h5(class="card-title")=content.title
                                         p(class="card-text")= content.descriptions
                                         div(class="card-button")
-                                            button(type="button", class="btn button py-2 px-4") المزيد
+                                            button(type="button", class="btn button fs-5") المزيد
 block scripts 
     // Swiper JS 
     script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

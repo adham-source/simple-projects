@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as color;
-@use '../abstracts//variables' as font;
+@use "../abstracts/variables" as color;
+@use "../abstracts//variables" as font;
 body {
     background-color: color.$color-white;
     color: color.$color-black;
@@ -11,8 +11,8 @@ main {
 }
 
 section {
-    padding: .5rem 0;
-    margin: .5rem 0;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
 }
 
 .morbid_fear {
@@ -43,22 +43,26 @@ img {
     .image {
         max-width: 65%;
         object-fit: cover;
-    }  
+    }
 }
-
 
 .facebook {
     color: color.$color-facebook;
 }
 
-.twitter {
-    color: color.$color-twitter;
-}
-
-.instagram {
-    color: color.$color-instagram;
-}
-
 .whatsapp {
     color: color.$color-whatsApp;
+}
+
+.yahoo {
+    color: color.$color-yahoo;
+}
+
+.youtube {
+    color: #ff0000;
+}
+
+.phone-call,
+.mail-send {
+    color: color.$main-color;
 }
