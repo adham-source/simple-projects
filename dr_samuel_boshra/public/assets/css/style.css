@@ -8,11 +8,6 @@ main {
   min-height: 100vh;
 }
 
-section {
-  padding: 0.5rem 0;
-  margin: 0.5rem 0;
-}
-
 .morbid_fear {
   min-height: 600px;
 }
@@ -157,6 +152,20 @@ img {
 }
 .button:focus {
   box-shadow: none;
+}
+
+.who-are-we .content_text p {
+  position: relative;
+  padding-right: 1rem;
+}
+.who-are-we .content_text p::after {
+  content: "-";
+  position: absolute;
+  top: -0.2rem;
+  right: 0;
+  font-size: 1.3rem;
+  color: #0f9f90;
+  display: flex;
 }
 
 .blog_content h6 {

@@ -9,14 +9,16 @@ block hero-header
         .container-fluid 
             div(class="row align-items-center") 
                 div(class="col-lg-6")
-                    div(class="hero_content-text")
+                    div(class="hero_content-text py-3")
                         h1(class="display-3 text-center") احجز استشارتك الآن
+                        h6(class="text-center fs-5") الاستاذ الدكتور / صمويل تامر بشرى
+
                 div(class="col-lg-6 bg-white")
                     div(class="hero_content-bg")
                         img(src="assets/images/header.jpg" alt="Dr.Samuel", class="img-fluid w-100")/
 
 block content 
-    main(class="my-3")
+    main(class="mt-3")
         //- The fisrt section morbid fear
         
         section(class="mental_disorders morbid_fear py-5")
@@ -64,7 +66,7 @@ block content
                 div(class="row")
                     div(class="col-lg-6 mb-3")
                         p(class="fs-4 text-start mb-5") الفوبيا أو الرهاب هو خوف شديد، مفرط، غير عقلاني، وغير مبرر من حالة معيّنة أو سلوك معيّن، ينطوى على شعور بالخطر وخوف من الأذى، وبالتالي يؤدى لمحاولة الشخص الهروب من المواجهة مع هذا الموقف أو هذه الحالة، فمثلاً من يخاف الأماكن المرتفعة يكون لديه دوماً شعور بالرعب من السقوط عند التواجد في مكان مرتفع فيحاول دوماً الابتعاد عن مثل تلك الأماكن. 
-                        button(type="button", class="btn button", data-bs-toggle="modal", data-bs-target="#staticBackdrop") إقراء المزيد
+                        button(type="button", class="btn button", data-bs-toggle="modal", data-bs-target="#staticBackdrop") إقرأ المزيد
                     div(class="col-lg-6 mb-3 text-end")
                         img(src="assets/images/morbid-fear-01.jpg", alt="", srcset="" class="rounded-2 image shadow")
                 //- Content morbid fear into modal
@@ -90,7 +92,7 @@ block content
                                 li(class="social_media-list-item me-2")
                                     a(href="https://www.facebook.com/الأستاذ-الدكتور-صمويل-بشري-101199182425741/" class="bx bxl-facebook facebook fs-3")
                                 li(class="social_media-list-item me-2")
-                                    a(href="https://wa.me/15551234567" class="bx bxl-whatsapp whatsapp fs-3")
+                                    a(href="https://wa.me/01091667696" class="bx bxl-whatsapp whatsapp fs-3")
                                 li(class="social_media-list-item me-2")
                                     a(href="https://youtube.com/channel/UC_pIIy7tGkAh6hZbrLqJWwA/" class="bx bxl-youtube youtube fs-3")
                                 li(class="social_media-list-item me-2")
@@ -98,8 +100,26 @@ block content
                                 li(class="social_media-list-item me-2")
                                     a(href="mailto:samuelboshra25@yahoo.com" class="bx bxl-yahoo yahoo fs-3")
                                 li(class="social_media-list-item me-2")
-                                    a(href="tel:" class="bx bx-phone-call phone-call fs-3")
-
+                                    a(href="tel:01282991010" class="bx bx-phone-call phone-call fs-3")
+        section(class="who-are-we bg-light py-5 border-top border-info border-2", id="who-are-we")
+            .container 
+                div(class="text-lg-center text-start mb-3")
+                    h2(class="") من نحن
+                div(class="row align-items-center g-3")
+                    div(class="content_text col-lg-6 mb-3 mt-2")
+                        b(class="") الاستاذ الدكتور / صمويل تامر بشرى
+                        p(class="mt-2") استاذ الصحة النفسية بكلية التربية جامعة اسيوط
+                        p(class="") رائد الحرية النفسية بمصر والوطن العربى
+                        p(class="") رئيس قسم علم النفس سابقا منذ عام 2016
+                        p(class="") رئيس قسم الصحة النفسية 2021
+                        p(class="") أستاذ الصحة النفسية والإرشاد النفسى، قسم الصحة النفسية، كلية التربية، جامعة أسيوط
+                        p(class="") مدير مركز التواصل التخصصى لذوى الاحتياجات الخاصة بجامعة أسيوط 2018م
+                        p(class="") رئيس قسم علم النفس التربوى، كلية التربية ،جامعة أسيوط من 2016 حتى 31/4/2021
+                        p(class="") عضو اللجنة الاستشارية وعضو لجنة التحكيم في عدد من المجلات العلمية التخصصية في التربية وعلم النفس بجمهورية مصر العربية وبعض جامعات الوطن العربي
+                        p(class="") محكم باللجنة العلمية الدائمة لترقية الأساتذة
+                    div(class="col-lg-6 mb-3 mt-2 ")
+                        img(src="assets/images/who-are-we.jpg", alt="Some information with dr-samuel", class="rounded-2 d-block h-100 shadow")
+                    
         //- section(class="bg-white py-5 border-top border-info border-2")
             .container
                 div(class="text-lg-center text-start")
